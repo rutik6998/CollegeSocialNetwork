@@ -1,0 +1,369 @@
+ /*
+/* Created by Filipe Pina
+ * Specific styles of signin, register, component
+ */
+/*
+ * General styles
+ */
+#playground-container {
+    height: 500px;
+    overflow: hidden !important;
+    -webkit-overflow-scrolling: touch;
+}
+body, html{
+     height: 100%;
+  background-repeat: no-repeat;
+  background:url();
+  font-family: 'Montserrat', sans-serif !important ;
+      background-size: cover;
+}
+
+.main{
+  margin:10px 15px;
+  /*background: #ccc;*/
+}
+h1
+{
+  font-size: 30px;
+}
+h1.title { 
+  font-size: 50px;
+  font-family: 'Passion One', cursive; 
+  font-weight: 400; 
+}
+h5
+{
+  font-size:50px;
+  color: white;
+  text-decoration-style: none;
+  font-family: 'Montserrat', sans-serif !important ;
+  text-align: center; 
+}
+h5.title
+{
+  font-size:100px;
+  color: white;
+  text-decoration-style: none;
+  font-family: 'Montserrat', sans-serif !important ;
+  text-align: center; 
+}
+
+hr{
+  width: 10%;
+  color: #fff;
+}
+
+.form-group{
+  margin-bottom: 15px;
+}
+
+label{
+  margin-bottom: 15px;
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 11px;
+    padding-top: 3px;
+}
+
+.main-login{
+  background-color:  #C89201;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+
+}
+.form-control {
+    height: auto!important;
+padding: 8px 12px !important;
+}
+.input-group {
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+}
+#button {
+    border: 1px solid #ccc;
+    margin-top: 28px;
+    padding: 6px 12px;
+    color: #666;
+    text-shadow: 0 1px #fff;
+    cursor: pointer;
+    -moz-border-radius: 3px 3px;
+    -webkit-border-radius: 3px 3px;
+    border-radius: 3px 3px;
+    -moz-box-shadow: 0 1px #fff inset, 0 1px #ddd;
+    -webkit-box-shadow: 0 1px #fff inset, 0 1px #ddd;
+    box-shadow: 0 1px #fff inset, 0 1px #ddd;
+    background: #f5f5f5;
+    background: -moz-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f5f5f5), color-stop(100%, #eeeeee));
+    background: -webkit-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: -o-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: -ms-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#eeeeee', GradientType=0);
+}
+.main-center{
+  margin-top: 30px;
+  margin: 0 auto;
+  max-width: 400px;
+    padding: 10px 40px;
+  background: #333;
+      color:  #C89201;;
+    text-shadow: none;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+
+}
+span
+{
+  font-size:15px;
+  cursor:pointer;
+  color: white;"
+
+}
+
+span.input-group-addon i {
+    color: #009edf;
+    font-size: 17px;
+}
+
+.login-button{
+  margin-top: 5px;
+}
+
+.login-register{
+  font-size: 11px;
+  text-align: center;
+}
+/*for image hover*/
+/* quick reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* relevant styles */
+.img__wrap {
+  position: relative;
+  height: 200px;
+  width: 257px;
+}
+
+.img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/*for new effect*/
+
+
+/* Uncomment everything commented to CSS for the hide/show */
+
+.gallery {
+    width: 25em;
+    margin: 2em auto;
+}
+
+.gallery-item {
+    height: auto;
+    width: 48.618784527%;
+    float: left;
+    margin-bottom: 2em;
+    position: relative;
+}
+
+    .gallery-item:first-child {
+        margin-right: 2.762430939%;
+    }
+
+.gallery-item img {
+    width: 100%;
+}
+
+.gallery-item:hover .img-title {
+    /*opacity: 1;*/
+}
+
+.img-title {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    /*opacity: 0;*/
+    display: none; /* comment this out for CSS hover */
+    background-color: #333;
+    /*transition: all 0.5s ease;*/
+}
+
+    .img-title h5 {
+        position: absolute;
+        color: #fff;
+        top: 33%;
+        width: 100%;
+        text-align: center;
+    }
+    #tooltip{
+  position:absolute;
+  border:1px solid #333;
+  background:#f7f5d1;
+  padding:2px 5px;
+  color:#333;
+  display:none;
+  }
+
+
+  /*zoooooommmmm*/
+
+
+}
+/*side bar for admin.php file*/
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding: 80px 0px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    transition: 0.4s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+    text-decoration: none; 
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color:white;
+    overflow: hidden;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+    /*background: #ccc;*/
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.table-responsive
+{
+  overflow-x: hidden!important;
+}
+
+table-responsive*{
+  -webkit-box-sizing: initial !important;
+  -moz-box-sizing: initial !important;
+  box-sizing: initial !important;
+  overflow-x: hidden!important;
+}
+
+
+
+
+
+
+/*.sidebar_header 
+{
+    height: 70px;
+    width: 100%;
+    background: #353534;
+    padding: 10px 0;
+  }*/
+
+
+/*css for dashbored box count the projects*/
+  .cnt_box {
+    float: left;
+    width: 25%;
+    margin: 50px 20px 80px 50px;
+    height: 70px;
+  }
+
+.cnt_box_txt {
+    float: left;
+    width: 80%;
+    height: 100%;
+    background: #999;
+  }
+  .no_margin {
+    margin: 15px auto 0 !important;
+    padding: 0;
+    width: 30%;
+    text-align: center;
+  }
+  .cnt_box_cnt {
+    float: left;
+    width: 20%;
+    height: 100%;
+    background: #808080;
+  }
+  .with_margin {
+    margin: 20px auto 0 !important;
+    padding: 0;
+    width: 30%;
+    text-align: center;
+    color: #FFF;
+    font-size: 25px;
+}
+.cnt_box_txt p {
+    margin: 0 auto;
+    padding: 0;
+    width: 30%;
+    text-align: center;
+    color: #FFF;
+}
+/*end of dashbord box*/
+  </style>
+/**/
